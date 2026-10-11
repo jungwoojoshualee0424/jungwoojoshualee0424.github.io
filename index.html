@@ -16,6 +16,9 @@
       .eq { white-space: nowrap; }
       /* research entries: title across the full width, then thumbnail (35%) + text */
       .paper-title { margin-bottom: 10px; }
+      .summary-label { font-weight: 700; }
+      p.summary { margin-top: 2px; }
+      .list-note { font-size: 12px; color: #666; font-style: italic; text-align: right; padding: 0 16px; margin-bottom: -4px; }
       .papertitle { font-size: 17px; }
       .paper-body { display: flex; align-items: center; gap: 20px; }
       .paper-thumb { flex: 0 0 35%; max-width: 35%; }
@@ -56,7 +59,7 @@
                 </p>
               </td>
               <td style="padding:2.5%;width:37%;max-width:37%">
-                <a href="images/photo_logo.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 0;" alt="Jungwoo Joshua Lee logo" src="images/photo_logo.jpg"></a>
+                <a href="images/photo_logo.png"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 0;" alt="Jungwoo Joshua Lee logo" src="images/photo_logo.png"></a>
               </td>
             </tr>
           </tbody></table>
@@ -75,6 +78,7 @@
             </tr>
           </tbody></table>
 
+          <div class="list-note">Click a paper title to read the full paper (PDF).</div>
           <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 <!-- ---------- 1. Physics HL Extended Essay ---------- -->
@@ -101,11 +105,10 @@
       </script>
       </div>
       <div class="paper-text">
-      <strong>Jungwoo Lee</strong>
-      <br>
       <em>IB Extended Essay, Physics HL</em> (Rigid Body Dynamics), 2026
       <p></p>
-      <p>
+      <div class="summary-label">Summary</div>
+      <p class="summary">
         Inspired by the "sweet spot" of a baseball bat, this essay asks how the position of the driving point for oscillation (x<sub>osc</sub>) determines the position of the instantaneous center of rotation (x<sub>ICR</sub>) in a 100&nbsp;cm uniform pine rod.
         Treating small-amplitude oscillation as a rapid succession of impacts, I derived <span class="eq">x<sub>ICR</sub> = &minus;(L<sup>2</sup>/12)&middot;x<sub>osc</sub><sup>&minus;1</sup></span> from the superposition of translational and rotational motion.
         I built a wooden support frame and an intermediate linkage driven by a linear actuator (2.6&ndash;3.4&nbsp;Hz), filmed nine driving points at 60&nbsp;fps, and tracked 19 holes along the rod in Tracker.
@@ -142,11 +145,10 @@
       </script>
       </div>
       <div class="paper-text">
-      <strong>Jungwoo Lee</strong>
-      <br>
       <em>IB Mathematics: Applications and Interpretation HL Internal Assessment</em>, 2026
       <p></p>
-      <p>
+      <div class="summary-label">Summary</div>
+      <p class="summary">
         Motivated by how differently a car and a bus ride over the same speed bump, this exploration models one wheel of a car as a 1-DOF quarter-car (m&nbsp;=&nbsp;400&nbsp;kg, k&nbsp;=&nbsp;10&nbsp;000&nbsp;N&nbsp;m<sup>&minus;1</sup>) released 0.1&nbsp;m above equilibrium.
         I rewrote <span class="eq">m&#7821; + c&#7819; + kx = 0</span> as a coupled first-order system <span class="eq">X&prime; = MX</span> and used its characteristic equation <span class="eq">&lambda;<sup>2</sup> + (c/400)&lambda; + 25 = 0</span> to show that the suspension is stable for every c&nbsp;&gt;&nbsp;0 and is critically damped at <span class="eq">c = 4000&nbsp;N&nbsp;s&nbsp;m<sup>&minus;1</sup></span>.
         Solving exactly with eigenvalues and eigenvectors for critically damped (&lambda;&nbsp;=&nbsp;&minus;5, repeated), over-damped (&lambda;&nbsp;=&nbsp;&minus;2.5, &minus;10) and under-damped (&zeta;&nbsp;=&nbsp;0.3, <span class="eq">&lambda; &asymp; &minus;1.5 &plusmn; 4.77i</span>) suspensions, I drew their phase portraits in Python.
@@ -182,11 +184,10 @@
       </script>
       </div>
       <div class="paper-text">
-      <strong>Jungwoo Lee</strong>
-      <br>
       <em>IB Physics HL Internal Assessment</em>, 2026
       <p></p>
-      <p>
+      <div class="summary-label">Summary</div>
+      <p class="summary">
         Noticing that different café straws deliver very different amounts of drink, I measured how the volumetric flow rate Q of water depends on the radius (1&ndash;3&nbsp;mm) and length (10&ndash;50&nbsp;cm) of acrylic pipes.
         A custom-built, continuously overflowing acrylic tank held the water head, and therefore the driving pressure, constant, and Q was found by weighing the water discharged in 30&nbsp;s.
         Combining the two power laws gave <span class="eq">Q = 10.71&middot;r<sup>2.3&nbsp;&plusmn;&nbsp;0.8</sup>/L<sup>0.38&nbsp;&plusmn;&nbsp;0.05</sup></span> (R<sup>2</sup>&nbsp;=&nbsp;0.997 for the combined fit).
@@ -214,7 +215,7 @@
 <!-- ---------- 1. Chemistry HL Internal Assessment ---------- -->
 <tr class="paper" onmouseout="kc_stop()" onmouseover="kc_start()">
   <td style="padding:16px">
-    <div class="paper-title"><span class="papertitle">The Effect of Temperature on the Equilibrium Constant of Iron(III) Thiocyanate</span></div>
+    <div class="paper-title"><a href="data/Chemistry_IA_Temperature_and_Equilibrium_Constant.pdf" target="_blank" rel="noopener"><span class="papertitle">The Effect of Temperature on the Equilibrium Constant of Iron(III) Thiocyanate</span></a></div>
     <div class="paper-body">
       <div class="paper-thumb">
       <a href="images/chem_kc_vanthoff_full.png"><div class="one">
@@ -235,14 +236,13 @@
       </script>
       </div>
       <div class="paper-text">
-      <strong>Jungwoo Lee</strong>
-      <br>
       <em>IB Chemistry HL Internal Assessment</em>, 2026
       <p></p>
-      <p>
+      <div class="summary-label">Summary</div>
+      <p class="summary">
         Using a UV-Vis spectrophotometer and a Beer&ndash;Lambert calibration curve, I measured how temperature (10&ndash;50&nbsp;&deg;C) affects the equilibrium constant of iron(III) thiocyanate.
         K<sub>c</sub> fell from 310&nbsp;&plusmn;&nbsp;50 to 200&nbsp;&plusmn;&nbsp;30, as Le Chatelier's principle predicts for an exothermic reaction, and a van 't Hoff plot was linear (R<sup>2</sup>&nbsp;=&nbsp;0.97).
-        Values about twice the literature value revealed a systematic error, which I traced mainly to aged reagents.
+        Values about twice the literature value revealed a systematic error, which I traced mainly to the lower ionic strength of my solutions.
       </p>
       </div>
     </div>
@@ -273,13 +273,12 @@
       </script>
       </div>
       <div class="paper-text">
-      <strong>Jungwoo Lee</strong>
-      <br>
       <em>IB Economics SL Internal Assessment</em>, Commentary 1 (Microeconomics), 2025
       <br>
       <a href="https://www.theguardian.com/australia-news/2025/may/11/not-a-surprise-whats-behind-australias-egg-shortage-and-is-it-here-to-stay">source article (The Guardian)</a>
       <p></p>
-      <p>
+      <div class="summary-label">Summary</div>
+      <p class="summary">
         Using supply and demand diagrams, this commentary analyzes Australia's shift from battery-cage to free-range eggs.
         Because both demand and supply are price-inelastic, an avian flu outbreak that shifts free-range supply only slightly causes a large price rise.
         I argue that the opportunity cost of choosing free-range eggs is a cheaper, more reliable supply, and that barn-laid eggs and stronger biosecurity can reduce it.
@@ -313,13 +312,12 @@
       </script>
       </div>
       <div class="paper-text">
-      <strong>Jungwoo Lee</strong>
-      <br>
       <em>IB Economics SL Internal Assessment</em>, Commentary 2 (Macroeconomics), 2026
       <br>
       <a href="https://www.abc.net.au/news/2026-02-18/wage-price-index-lags-inflation-real-wages-of-workers/106356432">source article (ABC News)</a>
       <p></p>
-      <p>
+      <div class="summary-label">Summary</div>
+      <p class="summary">
         Australian wages rose 3.4% while prices rose 3.8%, so real wages fell by about 0.4%.
         Using AD/AS diagrams, this commentary models a mix of demand-pull and cost-push inflation and the RBA's contractionary monetary policy.
         I argue that higher interest rates hurt workers and mortgage holders in the short run, especially in sectors with low wage growth, but are needed to prevent stagflation and let real wages recover.
@@ -353,13 +351,12 @@
       </script>
       </div>
       <div class="paper-text">
-      <strong>Jungwoo Lee</strong>
-      <br>
       <em>IB Economics SL Internal Assessment</em>, Commentary 3 (Global Economy), 2026
       <br>
       <a href="https://www.reuters.com/world/asia-pacific/china-cuts-eu-pork-tariffs-final-ruling-2025-12-16/">source article (Reuters)</a>
       <p></p>
-      <p>
+      <div class="summary-label">Summary</div>
+      <p class="summary">
         Using tariff diagrams, this commentary compares China's preliminary (up to 62.4%) and final (mostly 9.8%) anti-dumping duties on EU pork.
         The lower final rate shrinks producer gains and deadweight loss and lets imports recover.
         I argue that the tariff moved more with the separate EU&ndash;China dispute over electric-vehicle tariffs than with the pork market itself: interdependence can settle two disputes at once, but it passes risk onto exporters.
@@ -386,8 +383,6 @@
       </script>
       </div>
       <div class="paper-text">
-      <strong>Jungwoo Lee</strong>
-      <br>
       <em>Venue / Course</em>, Year
       <p></p>
       <p>Abstract.</p>
