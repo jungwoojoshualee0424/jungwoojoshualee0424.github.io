@@ -11,14 +11,18 @@
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <style>
       /* additions to the original template */
-      /* name and section headings: Times New Roman Bold, 3pt larger than before (35px and 26px) */
-      .name, h2 { font-family: "Times New Roman", Times, "Liberation Serif", serif; font-weight: 700; }
+      /* name and section headings: Nunito Bold (self-hosted, SIL Open Font License; see fonts/Nunito-OFL.txt) */
+      @font-face { font-family: "Nunito"; font-style: normal; font-weight: 700; font-display: swap;
+                   src: url("fonts/nunito-latin-700-normal.woff2") format("woff2"); }
+      .name, h2 { font-family: "Nunito", "Lato", Verdana, Helvetica, sans-serif; font-weight: 700; }
       .name { font-size: calc(35px + 3pt); }
       h2 { font-size: calc(26px + 3pt); }
       .eq { white-space: nowrap; }
       /* research entries: title across the full width, then thumbnail (35%) + text */
       .paper-title { margin-bottom: 10px; }
-      .summary-label { font-weight: 700; }
+      .summary-label { font-weight: 700; font-size: calc(14px + 2pt); text-decoration: underline; }
+      tr.acad .papertitle { font-size: calc(17px + 2pt); font-weight: 700; }
+      .contact-links, .contact-links a { font-size: calc(14px + 2pt); font-weight: 700; }
       p.summary { margin-top: 2px; }
       .list-note { font-size: 12px; color: #666; font-style: italic; text-align: right; padding: 0 16px; margin-bottom: -4px; }
       .papertitle { font-size: 17px; }
@@ -55,7 +59,7 @@
                 <p>
                   I'm currently applying to universities in the United States to study <strong>mechanical engineering</strong>, with a particular interest in <strong>robotics</strong>.
                 </p>
-                <p style="text-align:center">
+                <p class="contact-links" style="text-align:right">
                   <a href="mailto:jungwoojoshualee0424@gmail.com">Email</a> &nbsp;/&nbsp;
                   <a href="data/JungwooLee-CV.pdf" target="_blank" rel="noopener">CV</a>
                 </p>
@@ -84,7 +88,7 @@
           <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 <!-- ---------- 1. Physics HL Extended Essay ---------- -->
-<tr class="paper" onmouseout="icr_stop()" onmouseover="icr_start()" bgcolor="#ffffd0">
+<tr class="paper acad" onmouseout="icr_stop()" onmouseover="icr_start()" bgcolor="#ffffd0">
   <td style="padding:16px">
     <div class="paper-title"><a href="data/Extended_Essay_Instantaneous_Center_of_Rotation.pdf" target="_blank" rel="noopener"><span class="papertitle">The Driving Point for Oscillation and the Instantaneous Center of Rotation in a Uniform Wooden Rod</span></a></div>
     <div class="paper-body">
@@ -124,7 +128,7 @@
 </tr>
 
 <!-- ---------- 2. Math AI HL Internal Assessment ---------- -->
-<tr class="paper" onmouseout="susp_stop()" onmouseover="susp_start()">
+<tr class="paper acad" onmouseout="susp_stop()" onmouseover="susp_start()">
   <td style="padding:16px">
     <div class="paper-title"><a href="data/Math_AI_HL_IA_Quarter_Car_Suspension.pdf" target="_blank" rel="noopener"><span class="papertitle">Phase Portraits of a One-Degree-of-Freedom Quarter-Car Suspension</span></a></div>
     <div class="paper-body">
@@ -163,7 +167,7 @@
 </tr>
 
 <!-- ---------- 3. Physics HL Internal Assessment ---------- -->
-<tr class="paper" onmouseout="flow_stop()" onmouseover="flow_start()" bgcolor="#ffffd0">
+<tr class="paper acad" onmouseout="flow_stop()" onmouseover="flow_start()" bgcolor="#ffffd0">
   <td style="padding:16px">
     <div class="paper-title"><a href="data/Physics_IA_Flow_Rate_and_Pipe_Geometry.pdf" target="_blank" rel="noopener"><span class="papertitle">Volumetric Flow Rate of Water and Pipe Length and Radius under Constant Hydrostatic Pressure</span></a></div>
     <div class="paper-body">
@@ -206,7 +210,7 @@
           <!-- ============================== OTHER ACADEMIC WORK ============================== -->
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
-              <td style="padding:16px;width:100%;vertical-align:middle">
+              <td style="padding:16px;padding-top:52px;width:100%;vertical-align:middle">
                 <h2>Other Academic Work</h2>
               </td>
             </tr>
@@ -215,7 +219,7 @@
           <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 <!-- ---------- 1. Chemistry HL Internal Assessment ---------- -->
-<tr class="paper" onmouseout="kc_stop()" onmouseover="kc_start()">
+<tr class="paper acad" onmouseout="kc_stop()" onmouseover="kc_start()">
   <td style="padding:16px">
     <div class="paper-title"><a href="data/Chemistry_IA_Temperature_and_Equilibrium_Constant.pdf" target="_blank" rel="noopener"><span class="papertitle">The Effect of Temperature on the Equilibrium Constant of Iron(III) Thiocyanate</span></a></div>
     <div class="paper-body">
@@ -252,7 +256,7 @@
 </tr>
 
 <!-- ---------- 2. Economics SL Internal Assessment: Commentary 1 (Microeconomics) ---------- -->
-<tr class="paper" onmouseout="egg_stop()" onmouseover="egg_start()">
+<tr class="paper acad" onmouseout="egg_stop()" onmouseover="egg_start()">
   <td style="padding:16px">
     <div class="paper-title"><span class="papertitle">Egg Shortages and the Opportunity Cost of Choosing Free-Range Eggs in Australia</span></div>
     <div class="paper-body">
@@ -291,7 +295,7 @@
 </tr>
 
 <!-- ---------- 3. Economics SL Internal Assessment: Commentary 2 (Macroeconomics) ---------- -->
-<tr class="paper" onmouseout="wage_stop()" onmouseover="wage_start()">
+<tr class="paper acad" onmouseout="wage_stop()" onmouseover="wage_start()">
   <td style="padding:16px">
     <div class="paper-title"><span class="papertitle">Real Wages, Inflation and the Reserve Bank of Australia's Rate Rises</span></div>
     <div class="paper-body">
@@ -330,7 +334,7 @@
 </tr>
 
 <!-- ---------- 4. Economics SL Internal Assessment: Commentary 3 (Global Economy) ---------- -->
-<tr class="paper" onmouseout="tariff_stop()" onmouseover="tariff_start()">
+<tr class="paper acad" onmouseout="tariff_stop()" onmouseover="tariff_start()">
   <td style="padding:16px">
     <div class="paper-title"><span class="papertitle">China's Anti-Dumping Tariffs on EU Pork and Cross-Sector Interdependence</span></div>
     <div class="paper-body">
@@ -369,7 +373,7 @@
 </tr>
 
 <!-- ---------- TEMPLATE: copy this block to add a new entry ----------
-<tr class="paper" onmouseout="newid_stop()" onmouseover="newid_start()">
+<tr class="paper acad" onmouseout="newid_stop()" onmouseover="newid_start()">
   <td style="padding:16px">
     <div class="paper-title"><span class="papertitle">Title</span></div>
     <div class="paper-body">
