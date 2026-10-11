@@ -3,10 +3,10 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-    <title>Jungwoo Lee</title>
+    <title>Jungwoo Joshua Lee</title>
 
-    <meta name="author" content="Jungwoo Lee">
-    <meta name="description" content="Jungwoo Lee - high school student in South Korea interested in robotics and mechanical engineering.">
+    <meta name="author" content="Jungwoo Joshua Lee">
+    <meta name="description" content="Jungwoo Joshua Lee - high school student in South Korea interested in robotics and mechanical engineering.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <style>
@@ -41,7 +41,7 @@
             <tr style="padding:0px">
               <td style="padding:2.5%;width:63%;vertical-align:middle">
                 <p class="name" style="text-align: center;">
-                  Jungwoo Lee
+                  Jungwoo Joshua Lee
                 </p>
                 <p>
                   I'm a high school student at Chungnam Samsung High School in South Korea, where I'm completing the IB Diploma Programme.
@@ -56,8 +56,7 @@
                 </p>
               </td>
               <td style="padding:2.5%;width:37%;max-width:37%">
-                <!-- TODO: replace images/JungwooLee.jpg with a square photo (same file name) -->
-                <a href="images/JungwooLee.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/JungwooLee.jpg"></a>
+                <a href="images/photo_logo.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 0;" alt="Jungwoo Joshua Lee logo" src="images/photo_logo.jpg"></a>
               </td>
             </tr>
           </tbody></table>
@@ -412,15 +411,22 @@
           <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 <!-- ---------- 1. 3D-Printed Model Airplane Kits and Aerodynamics Workshops ---------- -->
-<tr class="paper">
+<tr class="paper" onmouseout="act1_stop()" onmouseover="act1_start()">
   <td style="padding:16px">
     <div class="paper-title"><span class="papertitle">3D-Printed Model Airplane Kits and Aerodynamics Workshops</span></div>
     <div class="paper-body">
       <div class="paper-thumb">
-        <!-- TODO: replace with an activity photo -->
-        <div class="one">
-          <img src='images/activity_placeholder.png' width=100% alt="Photo coming soon">
-        </div>
+        <a href="images/act_3dprint1_full.png"><div class="one">
+          <div class="two" id='act1_image'>
+            <img src='images/act_3dprint2.jpg' width=100% alt="Paper airplane fitted with a 3D-printed propeller and body">
+          </div>
+          <img src='images/act_3dprint1.png' width=100% alt="Slicer preview of a 3D-printed airplane kit part">
+        </div></a>
+        <script type="text/javascript">
+          function act1_start() { document.getElementById('act1_image').style.opacity = "1"; }
+          function act1_stop() { document.getElementById('act1_image').style.opacity = "0"; }
+          act1_stop()
+        </script>
       </div>
       <div class="paper-text">
         <strong>Project Lead &amp; Technical Instructor</strong>, local libraries, South Korea
@@ -438,15 +444,22 @@
 </tr>
 
 <!-- ---------- 2. Solar-Powered RC Car Kits for Renewable Energy Education ---------- -->
-<tr class="paper">
+<tr class="paper" onmouseout="act2_stop()" onmouseover="act2_start()">
   <td style="padding:16px">
     <div class="paper-title"><span class="papertitle">Solar-Powered RC Car Kits for Renewable Energy Education</span></div>
     <div class="paper-body">
       <div class="paper-thumb">
-        <!-- TODO: replace with an activity photo -->
-        <div class="one">
-          <img src='images/activity_placeholder.png' width=100% alt="Photo coming soon">
-        </div>
+        <a href="images/act_rccar1_full.jpg"><div class="one">
+          <div class="two" id='act2_image'>
+            <img src='images/act_rccar2.png' width=100% alt="CAD model of a bracket in Fusion 360">
+          </div>
+          <img src='images/act_rccar1.jpg' width=100% alt="Assembled RC car with Arduino board, motor driver and batteries">
+        </div></a>
+        <script type="text/javascript">
+          function act2_start() { document.getElementById('act2_image').style.opacity = "1"; }
+          function act2_stop() { document.getElementById('act2_image').style.opacity = "0"; }
+          act2_stop()
+        </script>
       </div>
       <div class="paper-text">
         <strong>Founder &amp; Lead Instructor</strong>, student-led initiative, South Korea
@@ -464,15 +477,22 @@
 </tr>
 
 <!-- ---------- 3. Self-Taught Arduino and Electronics ---------- -->
-<tr class="paper">
+<tr class="paper" onmouseout="act3_stop()" onmouseover="act3_start()">
   <td style="padding:16px">
     <div class="paper-title"><span class="papertitle">Self-Taught Arduino and Electronics</span></div>
     <div class="paper-body">
       <div class="paper-thumb">
-        <!-- TODO: replace with an activity photo -->
-        <div class="one">
-          <img src='images/activity_placeholder.png' width=100% alt="Photo coming soon">
-        </div>
+        <a href="images/act_arduino1_full.png"><div class="one">
+          <div class="two" id='act3_image'>
+            <img src='images/act_arduino2.png' width=100% alt="Arduino sketch that maps a potentiometer reading to a servo angle">
+          </div>
+          <img src='images/act_arduino1.png' width=100% alt="Arduino circuit controlling a servo with a potentiometer">
+        </div></a>
+        <script type="text/javascript">
+          function act3_start() { document.getElementById('act3_image').style.opacity = "1"; }
+          function act3_stop() { document.getElementById('act3_image').style.opacity = "0"; }
+          act3_stop()
+        </script>
       </div>
       <div class="paper-text">
         <strong>Independent Learner</strong>, South Korea
@@ -490,15 +510,22 @@
 </tr>
 
 <!-- ---------- 4. School Invention Contest: 2nd Place ---------- -->
-<tr class="paper">
+<tr class="paper" onmouseout="act4_stop()" onmouseover="act4_start()">
   <td style="padding:16px">
     <div class="paper-title"><span class="papertitle">School Invention Contest: 2nd Place</span></div>
     <div class="paper-body">
       <div class="paper-thumb">
-        <!-- TODO: replace with an activity photo -->
-        <div class="one">
-          <img src='images/activity_placeholder.png' width=100% alt="Photo coming soon">
-        </div>
+        <a href="images/act_invention1_full.png"><div class="one">
+          <div class="two" id='act4_image'>
+            <img src='images/act_invention2.png' width=100% alt="Labelled blueprint of the invention design">
+          </div>
+          <img src='images/act_invention1.png' width=100% alt="Concept sketch for the invention contest">
+        </div></a>
+        <script type="text/javascript">
+          function act4_start() { document.getElementById('act4_image').style.opacity = "1"; }
+          function act4_stop() { document.getElementById('act4_image').style.opacity = "0"; }
+          act4_stop()
+        </script>
       </div>
       <div class="paper-text">
         <strong>Finalist</strong>, Chungnam Samsung High School
@@ -515,16 +542,136 @@
   </td>
 </tr>
 
-<!-- ---------- 5. Kendo and American Football ---------- -->
+<!-- ---------- 5. Eco-Friendly Fertilizer from Recycled Soil ---------- -->
+<tr class="paper" onmouseout="act6_stop()" onmouseover="act6_start()">
+  <td style="padding:16px">
+    <div class="paper-title"><span class="papertitle">Eco-Friendly Fertilizer from Recycled Soil</span></div>
+    <div class="paper-body">
+      <div class="paper-thumb">
+        <a href="images/act_fertilizer1_full.png"><div class="one">
+          <div class="two" id='act6_image'>
+            <img src='images/act_fertilizer2.jpg' width=100% alt="Workshop for local elementary students">
+          </div>
+          <img src='images/act_fertilizer1.png' width=100% alt="Mixing the recycled-soil fertilizer by hand">
+        </div></a>
+        <script type="text/javascript">
+          function act6_start() { document.getElementById('act6_image').style.opacity = "1"; }
+          function act6_stop() { document.getElementById('act6_image').style.opacity = "0"; }
+          act6_stop()
+        </script>
+      </div>
+      <div class="paper-text">
+        <strong>Co-founder</strong>, student-led initiative, South Korea
+        <br>
+        <em>Mar 2025 &ndash; Feb 2026</em>
+        <p></p>
+        <p>
+          I co-founded a project that turned recycled soil and natural minerals into an organic fertilizer, and I cared for the mix consistently until it supported healthy plant growth.
+          We ran workshops where local elementary students learned about soil and took home potted plants with our fertilizer.
+          I also built a voting box for peer surveys and upcycled collected can tabs into bracelets for our teachers.
+        </p>
+      </div>
+    </div>
+  </td>
+</tr>
+
+<!-- ---------- 6. Campus Lounge Woodworking Project ---------- -->
 <tr class="paper">
+  <td style="padding:16px">
+    <div class="paper-title"><span class="papertitle">Campus Lounge Woodworking Project</span></div>
+    <div class="paper-body">
+      <div class="paper-thumb">
+        <a href="images/act_woodworking_full.jpg"><div class="one">
+          <img src='images/act_woodworking.jpg' width=100% alt="Wooden lamp stand built for the student lounge">
+        </div></a>
+      </div>
+      <div class="paper-text">
+        <strong>Lead Fabricator</strong>, Chungnam Samsung High School
+        <br>
+        <em>Aug 2024 &ndash; Dec 2024</em>
+        <p></p>
+        <p>
+          I led a student team that turned an unused corner of our campus into a lounge where students could gather.
+          I drafted the blueprints and built the furniture by hand, including a table, a footrest, a pan pedestal and lamp stands, with saws, drills and a soldering iron.
+        </p>
+      </div>
+    </div>
+  </td>
+</tr>
+
+<!-- ---------- 7. Mentoring Children from Multicultural Families ---------- -->
+<tr class="paper" onmouseout="act8_stop()" onmouseover="act8_start()">
+  <td style="padding:16px">
+    <div class="paper-title"><span class="papertitle">Mentoring Children from Multicultural Families</span></div>
+    <div class="paper-body">
+      <div class="paper-thumb">
+        <a href="images/act_children1_full.jpg"><div class="one">
+          <div class="two" id='act8_image'>
+            <img src='images/act_children2.jpg' width=100% alt="Craft session with children (faces blurred)">
+          </div>
+          <img src='images/act_children1.jpg' width=100% alt="Hands-on light-up craft kit">
+        </div></a>
+        <script type="text/javascript">
+          function act8_start() { document.getElementById('act8_image').style.opacity = "1"; }
+          function act8_stop() { document.getElementById('act8_image').style.opacity = "0"; }
+          act8_stop()
+        </script>
+      </div>
+      <div class="paper-text">
+        <strong>Volunteer Educator</strong>, local community program, South Korea
+        <br>
+        <em>Nov 2025 &ndash; Dec 2025</em>
+        <p></p>
+        <p>
+          Every week I visited a local community program to tutor children from multicultural families in basic STEM, Korean and English.
+          To keep them engaged, I designed and built hands-on craft kits so that each child could finish a working project and gain confidence in learning.
+        </p>
+      </div>
+    </div>
+  </td>
+</tr>
+
+<!-- ---------- 8. "Algorable" Computer Science Club ---------- -->
+<tr class="paper">
+  <td style="padding:16px">
+    <div class="paper-title"><span class="papertitle">&ldquo;Algorable&rdquo; Computer Science Club</span></div>
+    <div class="paper-body">
+      <div class="paper-thumb">
+        <a href="images/act_club_full.png"><div class="one">
+          <img src='images/act_club.png' width=100% alt="Python script for the document converter">
+        </div></a>
+      </div>
+      <div class="paper-text">
+        <strong>President &amp; Lead Developer</strong>, Chungnam Samsung High School
+        <br>
+        <em>Mar 2025 &ndash; Present</em>
+        <p></p>
+        <p>
+          As president, I led student teams through C/C++ and Python projects, including genetic algorithms for autonomous vehicle simulations, and I taught coding to younger members.
+          When my peers struggled with incompatible document formats on school computers, I wrote a Python document converter to solve the problem.
+        </p>
+      </div>
+    </div>
+  </td>
+</tr>
+
+<!-- ---------- 9. Kendo and American Football ---------- -->
+<tr class="paper" onmouseout="act5_stop()" onmouseover="act5_start()">
   <td style="padding:16px">
     <div class="paper-title"><span class="papertitle">Kendo and American Football</span></div>
     <div class="paper-body">
       <div class="paper-thumb">
-        <!-- TODO: replace with an activity photo -->
-        <div class="one">
-          <img src='images/activity_placeholder.png' width=100% alt="Photo coming soon">
-        </div>
+        <a href="images/act_kendo_full.png"><div class="one">
+          <div class="two" id='act5_image'>
+            <img src='images/act_football.jpg' width=100% alt="American football team photo">
+          </div>
+          <img src='images/act_kendo.png' width=100% alt="Kendo sparring practice">
+        </div></a>
+        <script type="text/javascript">
+          function act5_start() { document.getElementById('act5_image').style.opacity = "1"; }
+          function act5_stop() { document.getElementById('act5_image').style.opacity = "0"; }
+          act5_stop()
+        </script>
       </div>
       <div class="paper-text">
         <strong>Kendo Member</strong>; <strong>Linebacker &amp; Wide Receiver</strong>, South Korea
@@ -541,12 +688,20 @@
 </tr>
 
 <!-- ---------- TEMPLATE: copy this block to add a new activity ----------
-<tr class="paper">
+<tr class="paper" onmouseout="newact_stop()" onmouseover="newact_start()">
   <td style="padding:16px">
     <div class="paper-title"><span class="papertitle">Activity Name</span></div>
     <div class="paper-body">
       <div class="paper-thumb">
-        <div class="one"><img src='images/ACTIVITY_PHOTO.jpg' width=100% alt="..."></div>
+        <a href="images/PHOTO1_full.jpg"><div class="one">
+          <div class="two" id='newact_image'><img src='images/PHOTO2.jpg' width=100% alt="..."></div>
+          <img src='images/PHOTO1.jpg' width=100% alt="...">
+        </div></a>
+        <script type="text/javascript">
+          function newact_start() { document.getElementById('newact_image').style.opacity = "1"; }
+          function newact_stop() { document.getElementById('newact_image').style.opacity = "0"; }
+          newact_stop()
+        </script>
       </div>
       <div class="paper-text">
         <strong>Role</strong>, Organization
