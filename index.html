@@ -11,8 +11,10 @@
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <style>
       /* additions to the original template */
-      .name { font-size: 35px; }
-      h2 { font-size: 26px; }
+      /* name and section headings: Times New Roman Bold, 3pt larger than before (35px and 26px) */
+      .name, h2 { font-family: "Times New Roman", Times, "Liberation Serif", serif; font-weight: 700; }
+      .name { font-size: calc(35px + 3pt); }
+      h2 { font-size: calc(26px + 3pt); }
       .eq { white-space: nowrap; }
       /* research entries: title across the full width, then thumbnail (35%) + text */
       .paper-title { margin-bottom: 10px; }
